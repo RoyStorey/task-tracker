@@ -1,0 +1,69 @@
+.body-container {
+  position: relative;
+  padding: 4rem 8rem;
+  box-sizing: border-box;
+  min-height: calc(100vh - 8rem);
+  width: 100%;
+  z-index: 3;
+}
+.content-container {
+  /* background-color: red; */
+  display: flex;
+  flex: 1;
+}
+.bonko-logo-container {
+  /* background-color: rgb(49, 0, 25); */
+  width: 100%;
+  height: calc(100vh - 8rem);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bonko-logo {
+  /* background-color: red; */
+}
+.bonko-logo img {
+  object-fit: contain;
+  width: 100%;
+  height: 30vh;
+  animation: bonko-float 3s infinite ease-in-out;
+}
+
+.bonko-menu-container {
+  min-width: 10%;
+  min-height: 10vh;
+  text-align: right;
+}
+.bonko-menu-container h1 {
+  font-size: 3rem;
+}
+.bonko-menu-container h1:hover,
+h3:hover {
+  cursor: pointer;
+  color: white;
+}
+.background-style-div {
+  position: absolute;
+  opacity: 0.1;
+  background-color: red;
+  z-index: 2;
+  height: 100vh;
+  width: 200%;
+  rotate: 145deg;
+}
+
+@keyframes bonko-float {
+  0% {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+  50% {
+    margin-top: 0rem;
+    margin-left: 0rem;
+  }
+  100% {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+}

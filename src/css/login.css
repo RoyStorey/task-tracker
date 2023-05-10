@@ -39,7 +39,7 @@
 
 .login-bonko-menu-container h1 {
   font-size: 3rem;
-  color: var(--bonko-primary-dark)
+  color: var(--bonko-text)
 }
 
 .login-bonko-menu-container h1:hover,

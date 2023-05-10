@@ -8,9 +8,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 1px;
+  backdrop-filter: blur(3px);
+  z-index: 5
 }
 
 .footer-container h5 {
   margin: 0px;
+  letter-spacing: 1px;
 }

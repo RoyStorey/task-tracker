@@ -1,5 +1,5 @@
 :root {
-  --bonko-background: rgb(0, 20, 26);
+  --bonko-background: rgb(17, 17, 17);
 
   --primary-hue-rotate: 25deg;
   --bonko-primary-key: var(--primary-hue-rotate), 100%;
@@ -8,7 +8,7 @@
   --bonko-primary: hsl(var(--bonko-primary-key), 66%);
   --bonko-primary-dark: hsl(var(--bonko-primary-key), 55%);
   --bonko-primary-darker: hsl(var(--bonko-primary-key), 44%);
-  --bonko-text: hsl(var(--bonko-primary-key), 100%);
+  --bonko-text: hsl(var(--bonko-primary-key), 90%);
   --bonko-background-div: hsl(var(--bonko-primary-key), 66%);
 
   --border: 1px var(--bonko-primary) solid;

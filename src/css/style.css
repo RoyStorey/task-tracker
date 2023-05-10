@@ -1,13 +1,60 @@
 :root {
-  --bonko-background: #ffffff;
-  --bonko-text: #ff5258;
+  --bonko-background: rgb(43, 43, 43);
+
+  --primary-hue-rotate: 25deg;
+  --bonko-primary-key: var(--primary-hue-rotate), 100%;
+
+
+  --bonko-primary: hsl(var(--bonko-primary-key), 66%);
+  --bonko-primary-dark: hsl(var(--bonko-primary-key), 55%);
+  --bonko-primary-darker: hsl(var(--bonko-primary-key), 44%);
+  --bonko-text: hsl(var(--bonko-primary-key), 66%);
+
+  --border: 1px var(--bonko-primary) solid;
 }
 
 body {
-  background-color: var(--bonko-background);
+  background: var(--bonko-background);
   margin: 0px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Oswald;
+  text-transform: lowercase;
   color: var(--bonko-text);
   overflow: hidden;
+}
+
+.header-container {
+  /* border: var(--border); */
+  position: relative;
+  height: 4rem;
+  width: 100%;
+  padding: 0rem 2rem;
+  box-sizing: border-box;
+}
+
+.background-style-div {
+  position: absolute;
+  opacity: 0.1;
+  background-color: var(--bonko-primary);
+  z-index: 2;
+  height: 100vh;
+  width: 200%;
+  rotate: 145deg;
+}
+
+
+@keyframes bonko-float {
+  0% {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  50% {
+    margin-top: 0rem;
+    margin-left: 0rem;
+  }
+
+  100% {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
 }

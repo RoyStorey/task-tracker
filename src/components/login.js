@@ -2,6 +2,7 @@ import React from "react";
 import "../css/style.css";
 import "../css/login.css";
 import BonkoImage from "../media/bonko.png";
+import Footer from "../functional-components/footer";
 
 class Login extends React.Component {
   constructor() {
@@ -10,16 +11,17 @@ class Login extends React.Component {
   }
   render() {
     return (
-      <div className="page-container">
+      <div className="login-page-container">
         <div className="background-style-div"></div>
-        <div className="body-container">
-          <div className="content-container">
-            <div className="bonko-logo-container">
-              <div className="bonko-logo">
+        <div className="login-body-container">
+          <div className="login-content-container">
+            <div className="login-bonko-logo-container">
+              <div className="login-bonko-logo">
                 <img src={BonkoImage}></img>
               </div>
-              <div className="bonko-menu-container">
-                <h1>bonko</h1>
+              <div className="login-bonko-menu-container">
+                <h1 className="login-bonko-text">bonko</h1>
+                <h5 className="login-bonko-text">task-tracker</h5>
                 <br></br>
                 <h3>login</h3>
                 <h3>create account</h3>
@@ -27,6 +29,7 @@ class Login extends React.Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

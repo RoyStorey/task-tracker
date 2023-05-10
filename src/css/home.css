@@ -1,0 +1,160 @@
+.home-body-container {
+  position: relative;
+  padding: 4rem 16rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+}
+
+.home-content-container {
+  /* border: var(--border); */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem;
+  backdrop-filter: blur(2px);
+}
+
+.home-account-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-account-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  /* background-color: var(--bonko-primary) */
+}
+
+.home-account-icon-container {
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--bonko-primary);
+  border-radius: 100%;
+}
+
+.home-account-name-container {
+  height: 2rem;
+  min-width: 2rem;
+  /* background-color: var(--bonko-primary) */
+}
+
+.home-account-name-container h3 {
+  margin: 0px;
+  text-transform: lowercase;
+}
+
+.home-menu-options-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.home-panel-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  /* border: var(--border); */
+  box-sizing: border-box;
+
+}
+
+.home-panel {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  /* border: var(--border); */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.home-panel:last-of-type {
+  width: 40%;
+  /* border: var(--border); */
+}
+
+.home-calendar-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  /* border: var(--border); */
+  box-sizing: border-box;
+  /* padding: 1rem; */
+}
+
+.home-calendar {
+  height: 100%;
+  width: 100%;
+  border: var(--border);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-to-do-container {
+  width: 100%;
+  height: 100%;
+  border: var(--border);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-to-do-header {
+  width: 100%;
+  height: 8rem;
+  box-sizing: border-box;
+  /* border: var(--border); */
+  padding: 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-to-do-header-text-container {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-to-do-header-text-container h3 {
+  margin: 0px;
+}
+
+.home-to-do-body {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+  /* border: var(--border); */
+  padding: 0rem 1rem;
+}
+
+.home-to-do-list-container {
+  /* border: var(--border); */
+  width: 100%;
+  border-top: var(--border);
+  padding: 2rem 0rem;
+}
+
+.home-to-do-list-container ul li {
+  font-size: 1.2rem;
+}
+
+
+
+
+#hamburger-icon {
+  width: 2rem;
+  height: 2rem;
+  background: var(--bonko-primary);
+}

@@ -21,14 +21,15 @@
   align-items: center;
 }
 
-.login-bonko-logo {}
+.login-bonko-logo {
+}
 
 .login-bonko-logo img {
   object-fit: contain;
   width: 100%;
   height: 30vh;
   animation: bonko-float 3s infinite ease-in-out;
-  filter: hue-rotate(var(--primary-hue-rotate))
+  filter: hue-rotate(var(--primary-hue-rotate));
 }
 
 .login-bonko-menu-container {
@@ -39,24 +40,24 @@
 
 .login-bonko-menu-container h1 {
   font-size: 3rem;
-  color: var(--bonko-text)
+  color: var(--bonko-text);
 }
 
 .login-bonko-menu-container h1:hover,
 h3:hover {
   cursor: pointer;
   color: var(--bonko-primary);
-  margin-right: .5rem;
-  transition-duration: .5s;
-  text-shadow: .5rem 1px rgba(0, 0, 0, 0.05);
-  color: var(--bonko-primary-dark);
+  margin-right: 0.5rem;
+  transition-duration: 0.5s;
+  text-shadow: 0.5rem 1px rgba(0, 0, 0, 0.05);
+  color: var(--bonko-dark-text);
 }
 
 .login-bonko-menu-container h1:not(:hover),
 h3:not(:hover) {
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .login-bonko-text {
-  margin: 0px
+  margin: 0px;
 }

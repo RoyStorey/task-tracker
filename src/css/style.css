@@ -1,18 +1,18 @@
 :root {
-  --bonko-background: rgb(17, 17, 17);
+  --bonko-background: rgb(16, 16, 16);
 
-  --primary-hue-rotate: 25deg;
+  --primary-hue-rotate: 40deg;
   --bonko-primary-key: var(--primary-hue-rotate), 100%;
-
 
   --bonko-primary: hsl(var(--bonko-primary-key), 66%);
   --bonko-primary-dark: hsl(var(--bonko-primary-key), 55%);
   --bonko-primary-darker: hsl(var(--bonko-primary-key), 44%);
-  --bonko-text: hsl(var(--bonko-primary-key), 90%);
+  --bonko-text: hsl(var(--bonko-primary-key), 80%);
+  --bonko-dark-text: hsl(var(--bonko-primary-key), 60%);
   --bonko-background-div: hsl(var(--bonko-primary-key), 66%);
 
   --border: 1px var(--bonko-primary) solid;
-  --low-opacity-background: #00000055;
+  --low-opacity-background: #00000099;
 }
 
 body {
@@ -36,6 +36,7 @@ body {
 .background-style-div {
   position: absolute;
   opacity: 0.1;
+  border: 5px solid var(--bonko-primary-darker);
   background-color: var(--bonko-background-div);
   z-index: 2;
   height: 100vh;
@@ -70,7 +71,6 @@ body {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-
 
 @keyframes bonko-float {
   0% {

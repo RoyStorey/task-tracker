@@ -1,5 +1,5 @@
 :root {
-  --bonko-background: rgb(43, 43, 43);
+  --bonko-background: rgb(0, 20, 26);
 
   --primary-hue-rotate: 25deg;
   --bonko-primary-key: var(--primary-hue-rotate), 100%;
@@ -11,6 +11,7 @@
   --bonko-text: hsl(var(--bonko-primary-key), 66%);
 
   --border: 1px var(--bonko-primary) solid;
+  --low-opacity-background: #00000099;
 }
 
 body {
@@ -39,6 +40,34 @@ body {
   height: 100vh;
   width: 200%;
   rotate: 145deg;
+}
+
+.arrow {
+  border: solid var(--bonko-primary);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 0rem 1rem;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 

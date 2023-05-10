@@ -3,7 +3,7 @@ import "../css/footer.css"
 
 function Footer() {
   return (<div className="footer-container">
-    <h1>AH!</h1>
+    <h5>2023 Copyright: Bonko.dev</h5>
   </div>)
 }
 

@@ -1,5 +1,7 @@
 import React from "react";
+import Footer from "../functional-components/footer";
 import "../css/home.css"
+// import BonkoImage from "../media/bonko.png";
 
 class Home extends React.Component {
   constructor() {
@@ -43,12 +45,12 @@ class Home extends React.Component {
               <div className="home-panel">
                 <div className="home-to-do-container">
                   <div className="home-to-do-header">
-                    <h3>yesterday</h3>
+                    <h3><i className="arrow left"></i>yesterday</h3>
                     <div className="home-to-do-header-text-container">
                       <h3>Today's todo</h3>
                       <h3>05/10/2023</h3>
                     </div>
-                    <h3>tomorrow</h3>
+                    <h3>tomorrow<i className="arrow right"></i></h3>
                   </div>
                   <div className="home-to-do-body">
                     <div className="home-to-do-list-container">
@@ -66,6 +68,7 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     )
   }

@@ -21,8 +21,7 @@
   align-items: center;
 }
 
-.login-bonko-logo {
-}
+.login-bonko-logo {}
 
 .login-bonko-logo img {
   object-fit: contain;
@@ -40,7 +39,6 @@
 
 .login-bonko-menu-container h1 {
   font-size: 3rem;
-  color: var(--bonko-text);
 }
 
 .login-bonko-menu-container h1:hover,
@@ -60,4 +58,5 @@ h3:not(:hover) {
 
 .login-bonko-text {
   margin: 0px;
+  color: var(--bonko-login-text);
 }

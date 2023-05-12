@@ -19,7 +19,7 @@ class Home extends React.Component {
               <div className="home-account-container">
                 <div className="home-account-icon-container"></div>
                 <div className="home-account-name-container">
-                  <h3>bonko admin</h3>
+                  <h3>bonko admin<i className="arrow down"></i></h3>
                 </div>
               </div>
             </div>

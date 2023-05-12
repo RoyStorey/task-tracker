@@ -23,8 +23,8 @@ class Login extends React.Component {
                 <h1 className="login-bonko-text">bonko</h1>
                 <h5 className="login-bonko-text">task-tracker</h5>
                 <br></br>
-                <h3>login</h3>
-                <h3>create account</h3>
+                <h3 className="login-bonko-text">login</h3>
+                <h3 className="login-bonko-text">create account</h3>
               </div>
             </div>
           </div>

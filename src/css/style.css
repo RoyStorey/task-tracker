@@ -1,17 +1,20 @@
 :root {
-  --bonko-background: rgb(16, 16, 16);
 
-  --primary-hue-rotate: 40deg;
+  --primary-hue-rotate: 350deg;
   --bonko-primary-key: var(--primary-hue-rotate), 100%;
+
+  --bonko-background: hsl(0, 0%, 100%);
 
   --bonko-primary: hsl(var(--bonko-primary-key), 66%);
   --bonko-primary-dark: hsl(var(--bonko-primary-key), 55%);
   --bonko-primary-darker: hsl(var(--bonko-primary-key), 44%);
-  --bonko-text: hsl(var(--bonko-primary-key), 80%);
+  --bonko-text: hsl(var(--bonko-primary-key), 100%);
   --bonko-dark-text: hsl(var(--bonko-primary-key), 60%);
-  --bonko-background-div: hsl(var(--bonko-primary-key), 66%);
+  --bonko-login-text: hsl(var(--bonko-primary-key), 66%);
+  --bonko-background-div: hsl(var(--bonko-primary-key), 20%, .2);
+  --bonko-border-color: hsl(var(--bonko-primary-key), 66%, .4);
 
-  --border: 1px var(--bonko-primary) solid;
+  --border: 1px var(--bonko-border-color) solid;
   --low-opacity-background: #00000099;
 }
 
@@ -25,7 +28,6 @@ body {
 }
 
 .header-container {
-  /* border: var(--border); */
   position: relative;
   height: 4rem;
   width: 100%;
@@ -35,8 +37,8 @@ body {
 
 .background-style-div {
   position: absolute;
-  opacity: 0.1;
-  border: 5px solid var(--bonko-primary-darker);
+  /* opacity: 0.1; */
+  border: 5px solid var(--bonko-border-color);
   background-color: var(--bonko-background-div);
   z-index: 2;
   height: 100vh;

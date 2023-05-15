@@ -41,8 +41,7 @@
   font-size: 3rem;
 }
 
-.login-bonko-menu-container h1:hover,
-h3:hover {
+.login-bonko-menu-container>h3:hover {
   cursor: pointer;
   color: var(--bonko-primary);
   margin-right: 0.5rem;
@@ -51,8 +50,17 @@ h3:hover {
   color: var(--bonko-dark-text);
 }
 
-.login-bonko-menu-container h1:not(:hover),
-h3:not(:hover) {
+.login-bonko-menu-container>h1:hover {
+  cursor: pointer;
+  color: var(--bonko-primary);
+  margin-right: 0.5rem;
+  transition-duration: 0.5s;
+  text-shadow: 0.5rem 1px rgba(0, 0, 0, 0.05);
+  color: var(--bonko-dark-text);
+}
+
+.login-bonko-menu-container h1,
+h3 {
   transition-duration: 0.5s;
 }
 

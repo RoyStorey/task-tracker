@@ -12,7 +12,7 @@ class Login extends React.Component {
   render() {
     return (
       <div className="login-page-container">
-        <div className="background-style-div"></div>
+        {/* <div className="background-style-div"></div> */}
         <div className="login-body-container">
           <div className="login-content-container">
             <div className="login-bonko-logo-container">

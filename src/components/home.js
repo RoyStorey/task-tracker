@@ -5,6 +5,9 @@ import "../css/hamburger.css"
 import toggleHamburgerMenu from "../functions/toggle-hamburger-menu";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHamburger, faCheck, faX, faCoffee, faLineChart, faChessBoard, faDashboard } from '@fortawesome/free-solid-svg-icons'
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css'
+import '../css/calendar.css'
 // import BonkoImage from "../media/bonko.png";
 
 class Home extends React.Component {
@@ -36,7 +39,7 @@ class Home extends React.Component {
                 </div>
                 <div className="home-calendar-container">
                   <div className="home-calendar">
-                    <h5>calendar</h5>
+                    <Calendar />
                   </div>
                 </div>
               </div>
@@ -45,7 +48,6 @@ class Home extends React.Component {
                   <div className="home-to-do-header">
                     <h3 className="interactable"><i className="arrow left"></i>yesterday</h3>
                     <div className="home-to-do-header-text-container interactable">
-                      <h3>Today's todo</h3>
                       <h3>05/10/2023</h3>
                     </div>
                     <h3 className="interactable">tomorrow<i className="arrow right"></i></h3>
@@ -54,7 +56,7 @@ class Home extends React.Component {
                     <div className="home-to-do-list-container">
                       <ul>
                         <div className="home-to-do-list-item-container">
-                          <li className="home-to-do-list-item-name interactable">item 1</li>
+                          <li className="home-to-do-list-item-name interactable">The 89th CS Bonko Encabulator</li>
                           <li> 0/5 completed</li>
                           <div className="home-to-do-list-item-checkbox-container">
                             <FontAwesomeIcon icon={faCheck} className="list-item-check-icon" />
@@ -108,7 +110,7 @@ class Home extends React.Component {
           <div className="hamburger-menu-body-container">
             <div className="hamburger-menu-body-item">
               <FontAwesomeIcon icon={faDashboard} />
-              <h3 className="interactable">dashboard overlaying users calendar</h3>
+              <h3 className="interactable">dashboard</h3>
             </div>
             <div className="hamburger-menu-body-item">
               <FontAwesomeIcon icon={faChessBoard} />

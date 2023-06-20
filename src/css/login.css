@@ -39,6 +39,7 @@
 
 .login-bonko-menu-container h1 {
   font-size: 3rem;
+
 }
 
 .login-bonko-menu-container>h3:hover {
@@ -62,9 +63,11 @@
 .login-bonko-menu-container h1,
 h3 {
   transition-duration: 0.5s;
+
 }
 
 .login-bonko-text {
   margin: 0px;
   color: var(--bonko-login-text);
+
 }

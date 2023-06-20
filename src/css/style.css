@@ -1,9 +1,10 @@
 :root {
 
-  --primary-hue-rotate: 25deg;
+  --primary-hue-rotate: 200deg;
   --bonko-primary-key: var(--primary-hue-rotate), 100%;
 
-  --bonko-background: hsl(212, 25%, 12%);
+  --bonko-background: hsla(0, 0%, 0%, 0.801);
+  --bonko-non-opaque-background: hsl(0deg, 0%, 25%);
 
   --bonko-primary: hsl(var(--bonko-primary-key), 66%);
   --bonko-primary-dark: hsl(var(--bonko-primary-key), 55%);
@@ -15,14 +16,14 @@
   --bonko-border-color: hsl(var(--bonko-primary-key), 66%, .4);
 
   --border: 1px var(--bonko-border-color) solid;
-  --low-opacity-background: #00000099;
+  --low-opacity-background: hsla(var(--primary-hue-rotate), 10%, 8%, 0.333);
 }
 
 body {
   background: var(--bonko-background);
   margin: 0px;
   font-family: 'Source Sans Pro', sans-serif;
-  text-transform: lowercase;
+  text-transform: capitalize;
   color: var(--bonko-text);
   overflow: hidden;
 }
@@ -42,7 +43,7 @@ body h3 {
 .background-style-div {
   position: absolute;
   /* opacity: 0.1; */
-  border: 5px solid var(--bonko-border-color);
+  border: 1px solid var(--bonko-border-color);
   /* background-color: var(--bonko-background-div); */
   z-index: 2;
   height: 100vh;
@@ -92,7 +93,7 @@ li {
 .interactable:hover {
   cursor: pointer;
   color: var(--bonko-dark-text);
-  transition-duration: .25s;
+  transition-duration: .1s;
 }
 
 @keyframes bonko-float {
